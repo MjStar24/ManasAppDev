@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5BA0E4"
+    android:clipToPadding="true"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:id="@+id/Category"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_below="@+id/Category"
+        android:id="@+id/Type"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Difficulty"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_below="@+id/Type"
+        android:id="@+id/Difficulty"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score : 15"
+        android:layout_alignParentRight="true"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:id="@+id/Score"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="How are you?"
+        android:layout_above="@+id/ChoicesLayout"
+        android:textAlignment="center"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="italic"
+        android:textSize="25dp"
+        android:id="@+id/Questions"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ChoicesLayout"
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="badhiya "
+            android:id="@+id/FirstAns"
+
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="sab thik hai tu bata"
+            android:id="@+id/SecondAns"
+
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="zinda hu vro"
+            android:id="@+id/ThirdAns"
+
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Dafa ho ja"
+            android:id="@+id/FourthAns"
+
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Save and Next"
+        android:textSize="20dp"
+        android:layout_below="@+id/ChoicesLayout"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/submitBtn"
+        />
+
+
+
+
+
+
+
+</RelativeLayout>
